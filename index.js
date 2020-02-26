@@ -1,3 +1,6 @@
+// const runners = require("./data/runners.js");
+// console.log(runners);
+
 // ⭐️ Example Challenge START ⭐️
 
 /**
@@ -66,9 +69,9 @@ function processLength(list, callback) {
  * Invoking `processLastItem` passing `['foo', 'bar']` and `(str) => str + str`,
  * should return 'barbar'.
 */
-function processLastItem(/* CODE HERE */) {
-  /* CODE HERE */
-}
+function processLastItem(stringList, callback) {
+  return callback(stringList[stringList.length - 1])
+};
 
 /**
  * ### Challenge `processSum`
@@ -87,9 +90,9 @@ function processLastItem(/* CODE HERE */) {
  * [2] Invoking `processSum` passing `[]` and `(num) => num + 1000`,
  * should return 1000.
 */
-function processSum(/* CODE HERE */) {
-  /* CODE HERE */
-}
+function processSum(numberList, callback) {
+  
+};
 
 /**
  * ### Challenge `processProduct`
