@@ -1,5 +1,5 @@
-// const runners = require("./data/runners.js");
-// console.log(runners);
+const runners = require("./data/runners.js");
+console.log(runners);
 
 // ⭐️ Example Challenge START ⭐️
 
@@ -140,7 +140,7 @@ function processProduct(num1, num2, callback) {
 */
 function processContains(item, list, callback) {
   return callback(Boolean(list.includes(item))
-};
+}
 
 /**
  * ### Challenge `processDuplicateFree`
@@ -161,8 +161,8 @@ function processContains(item, list, callback) {
  * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
  * should return 3.
 */
-function processDuplicateFree(list, callback) {
-  // return callback(Array.from(new Set(list))
+function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */) {
+  /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
@@ -183,12 +183,9 @@ function processDuplicateFree(list, callback) {
  * @returns an array with all the runners' full names in the following format: "Smith, John".
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
-function getFullNames(runners) {
-  // return runners.map(getFullName(item)){
-  //   function getFullName = {
-  //     return [item.last_name,item.first_name].join(" ");
-  //   }
-  // }
+
+function getFullNames(/* CODE HERE */) {
+  /* CODE HERE */
 }
 
 /**
