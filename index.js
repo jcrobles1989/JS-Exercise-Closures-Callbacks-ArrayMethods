@@ -1,6 +1,3 @@
-const runners = require("./data/runners.js");
-console.log(runners);
-
 // ⭐️ Example Challenge START ⭐️
 
 /**
@@ -139,7 +136,7 @@ function processProduct(num1, num2, callback) {
  * should return "sad".
 */
 function processContains(item, list, callback) {
-  return callback(Boolean(list.includes(item))
+  return callback(list.includes(item))
 }
 
 /**
@@ -184,8 +181,12 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
 
-function getFullNames(/* CODE HERE */) {
-  /* CODE HERE */
+function getFullNames(runners) {
+  let newArray = []
+    runners.forEach(item => {
+      newArray.push(`${item.last_name}, ${item.first_name}`)
+  })
+  return newArray
 }
 
 /**
@@ -200,9 +201,12 @@ function getFullNames(/* CODE HERE */) {
  * @returns an array with all the runners' first names in ALL CAPS.
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
-function firstNamesAllCaps(/* CODE HERE */) {
-  /* CODE HERE */
-}
+function firstNamesAllCaps(runners) {
+  return runners.map(names => names.first_name.toUpperCase())
+};
+
+// return element for new_array
+
 
 /**
  * ### Challenge `getRunnersByTShirtSize`
@@ -217,8 +221,11 @@ function firstNamesAllCaps(/* CODE HERE */) {
  * @returns an array containing only the runners that use the given `tShirtSize`.
  * The runners in the array appear in the same order they appear in the `runners` array.
 */
-function getRunnersByTShirtSize(/* CODE HERE */) {
-  /* CODE HERE */
+function getRunnersByTShirtSize(runners, tShirtSize) {
+  let newArray = runners.filter(item => {
+    return item.shirt_size === tShirtSize
+  })
+  return newArray
 }
 
 /**
